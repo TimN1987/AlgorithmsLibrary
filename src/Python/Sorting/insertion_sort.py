@@ -1,6 +1,9 @@
+from typing import Any
+
 class InsertionSort:
-    
-    def sort_ascending(self, array):
+
+    def sort_ascending(self, array: Any) -> Any:
+        """ Uses insertion sort to sort in ascending order. """
         length = len(array)
         if (length == 0):
             return []
@@ -13,7 +16,8 @@ class InsertionSort:
             array[i + 1] = key
         return array
     
-    def sort_descending(self, array):
+    def sort_descending(self, array: Any) -> Any:
+        """ Uses insertion sort to sort in descending order. """
         length = len(array)
         if (length == 0):
             return []
