@@ -13,6 +13,7 @@ This is the structure currently found within each language directory in **src** 
 ```
 Language
 ├── Sorting
+|   ├── Insertion Sort
 |   ├── Merge Sort
 
 ```
@@ -21,4 +22,4 @@ Language
 
 - Learn a wider range of algorithms to apply to problems.
 - Increased confidence with JavaScript and Python syntax and conventions.
-- Further practise following a TDD approach with Github Actions for CI.
+- Further practice following a TDD approach with Github Actions for CI.
