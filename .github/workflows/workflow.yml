@@ -26,7 +26,8 @@ jobs:
 
       - name: Run Python tests
         run: |
-          pip install -r src/Python/requirements.txt 
+          python -m pip install --upgrade pip
+          pip install -r src/Python/requirements.txt
           pytest tests/Python
 
       # C#
@@ -37,7 +38,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Run .NET tests
-        run: dotnet test tests/CSharp
+        run: dotnet test tests/C#
 
       # JavaScript
       - name: Set up JavaScript tests
@@ -47,4 +48,7 @@ jobs:
           node-version: '20'
 
       - name: Run JavaScript tests
-        run: cd src/JavaScript npm ci npm test
+        run: |
+          cd src/JavaScript
+          npm ci
+          npm test
