@@ -1,6 +1,6 @@
 namespace AlgorithmsLibrary.Sorting;
 
-public class InsertionSort()
+public class InsertionSort
 {
     
 }
