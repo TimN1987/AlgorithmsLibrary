@@ -1,3 +1,3 @@
 class InsertionSort:
-    def __init__():
-        pass
+    def sortascending(self, array):
+        return []
