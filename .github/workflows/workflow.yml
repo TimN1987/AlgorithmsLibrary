@@ -25,7 +25,9 @@ jobs:
           python-version: '3.12'
 
       - name: Run Python tests
-        run: pip install -r src/Python/requirements.txt pytest tests/Python
+        run: |
+          pip install -r src/Python/requirements.txt 
+          pytest tests/Python
 
       # C#
       - name: Set up .NET tests
