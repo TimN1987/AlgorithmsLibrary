@@ -18,3 +18,5 @@ dist/
 # General
 .vscode/
 .DS_Store
+
+.fake
