@@ -1,6 +1,6 @@
 # 📋 Algorithms Library
 
-[![C#](https://img.shields.io/badge/C%23-WPF-purple?logo=csharp)](https://learn.microsoft.com/dotnet/csharp/)
+[![C#](https://img.shields.io/badge/C%23-.NET-512BD4?logo=csharp)](https://learn.microsoft.com/dotnet/csharp/)
 [![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
