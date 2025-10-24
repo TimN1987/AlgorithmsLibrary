@@ -11,7 +11,7 @@ public class MergeSortTests
     public void SortAscending_GenericInputs_ExpectedSortedOutputReturned<T>(IEnumerable<T> unsortedInput, IEnumerable<T> expectedResult) where T : IComparable<T>
     {
         //Arrange & Act
-        var result = InsertionSort.SortAscending(unsortedInput);
+        var result = MergeSort.SortAscending(unsortedInput);
 
         //Assert
         Assert.Equal(expectedResult, result);
@@ -22,12 +22,12 @@ public class MergeSortTests
     public void SortDescending_GenericInputs_ExpectedSortedOutputReturned<T>(IEnumerable<T> unsortedInput, IEnumerable<T> expectedResult) where T : IComparable<T>
     {
         //Arrange & Act
-        var result = InsertionSort.SortDescending(unsortedInput);
+        var result = MergeSort.SortDescending(unsortedInput);
 
         //Assert
         Assert.Equal(expectedResult, result);
     } 
-       
+
     public static IEnumerable<object[]> MemberDataSortAscendingGeneric()
     {
         yield return new object[] { new int[] { 3, 1, 5, 2, 4 }, new int[] { 1, 2, 3, 4, 5 } };

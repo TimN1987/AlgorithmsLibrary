@@ -16,7 +16,8 @@ public static class MergeSort
     {
         T[] values = unsortedValues.ToArray();
         int length = values.Length;
-        return DivideAndSort(values, 0, length - 1, true);
+        DivideAndSort(values, 0, length - 1, true);
+        return values;
     }
 
     /// <summary>
@@ -28,13 +29,14 @@ public static class MergeSort
     {
         T[] values = unsortedValues.ToArray();
         int length = values.Length;
-        return DivideAndSort(values, 0, length - 1, false);
+        DivideAndSort(values, 0, length - 1, false);
+        return values;
     }
 
     /// <summary>
     /// Splits the array in half, sorts each half and then merges together.
     /// </summary>
-    public static T[] DivideAndSort<T>(
+    public static void DivideAndSort<T>(
         T[] values,
         int left,
         int right,
@@ -42,21 +44,19 @@ public static class MergeSort
         ) where T : IComparable<T>
     {
         if (left >= right)
-            return values;
+            return;
 
         int mid = left + (right - left) / 2;
 
-        DivideAndSort(values, left, right, isAscending);
+        DivideAndSort(values, left, mid, isAscending);
         DivideAndSort(values, mid + 1, right, isAscending);
         Merge(values, left, mid, right, isAscending);
-
-        return values;
     }
     
     /// <summary>
     /// Merges the two halves of the array in the desired order.
     /// </summary>
-    private static T[] Merge<T>(
+    private static void Merge<T>(
         T[] values,
         int left,
         int mid,
@@ -98,7 +98,5 @@ public static class MergeSort
         {
             values[k++] = R[j++];
         }
-
-        return values;
     }
 }
