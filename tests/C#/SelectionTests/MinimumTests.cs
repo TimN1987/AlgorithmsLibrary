@@ -1,5 +1,4 @@
 using System;
-using System.Security.Authentication.ExtendedProtection;
 using AlgorithmsLibrary.Selection;
 using Xunit;
 
