@@ -12,10 +12,14 @@ This is the structure currently found within each language directory in **src** 
 
 ```
 Language
+├── Selection
+|   ├── Maximum
+|   ├── Minimum
+|   └── Quick Select
 ├── Sorting
 |   ├── Insertion Sort
 |   ├── Merge Sort
-|   ├── Quick Sort
+|   └── Quick Sort
 
 ```
 
