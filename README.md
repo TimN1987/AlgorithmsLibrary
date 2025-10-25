@@ -6,6 +6,12 @@
 
 A library of classes in different programming languages for common algorithms. Algorithms and associated tests are sorted initially by language and then by type. New additions to this library are made as I learn and practise the algorithm.
 
+## 🎯 Personal goals:
+
+- Learn a wider range of algorithms to apply to problems.
+- Increased confidence with JavaScript and Python syntax and conventions.
+- Further practice following a TDD approach with Github Actions for CI.
+
 ## 📚 Library Structure:
 
 This is the structure currently found within each language directory in **src** or **tests**.
@@ -22,9 +28,3 @@ Language
 |   └── Quick Sort
 
 ```
-
-## 🎯 Personal goals:
-
-- Learn a wider range of algorithms to apply to problems.
-- Increased confidence with JavaScript and Python syntax and conventions.
-- Further practice following a TDD approach with Github Actions for CI.
