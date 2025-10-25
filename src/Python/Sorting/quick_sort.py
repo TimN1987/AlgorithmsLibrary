@@ -1,10 +1,12 @@
 class QuickSort:
 
     def sort_ascending(self, array):
+        """ Uses quick sort to order values in ascending order. """
         self.quick_sort(array, 0, len(array) - 1, True)
         return array
 
     def sort_descending(self, array):
+        """ Uses quick sort to order values in descending order. """
         self.quick_sort(array, 0, len(array) - 1, False)
         return array
 
