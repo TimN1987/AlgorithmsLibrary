@@ -20,7 +20,7 @@ class QuickSelect {
     }
 
     static quickSelect(array, left, right, k, isSmallest) {
-        if (left === k)
+        if (left === right)
             return array[left];
         const pivotIndex = this.partition(array, left, right, isSmallest);
         const order = pivotIndex - left + 1;

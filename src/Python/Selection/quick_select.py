@@ -16,7 +16,7 @@ class QuickSelect:
     
     @staticmethod
     def quick_select(array, left, right, k, is_smallest):
-        if left == k:
+        if left == right:
             return array[left]
         pivot_index = QuickSelect.partition(array, left, right, is_smallest)
         order = pivot_index - left + 1
